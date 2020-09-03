@@ -18,8 +18,8 @@ namespace Reto.Infraestructure
         public Nullable<int> RutaId { get; set; }
         public Nullable<int> BusId { get; set; }
     
+        public virtual Bus Bus { get; set; }
         public virtual Pasajero Pasajero { get; set; }
         public virtual Ruta Ruta { get; set; }
-        public virtual Bus Bus { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace Reto.Infraestructure
     {
         public int PasajeroId { get; set; }
         public string NombreCompleto { get; set; }
-        public Nullable<bool> Tapabocas { get; set; }
+        public bool Tapabocas { get; set; }
         public Nullable<int> RutaBusId { get; set; }
         public Nullable<int> SillaAsignada { get; set; }
     

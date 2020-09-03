@@ -5,16 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="45aa30383b044603980dc9d7f9be283f" Name="Diagram1">
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Municipio" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Pasajero" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.RutaBus" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="ViajesTerrestresModel.FK_Destino" ManuallyRouted="false" />
-        <AssociationConnector Association="ViajesTerrestresModel.FK_Origen" ManuallyRouted="false" />
-        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Pasajero" ManuallyRouted="false" />
-        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Ruta" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Bus" Width="1.5" PointX="7.875" PointY="1.5" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Bus" Width="1.5" PointX="5.875" PointY="4.125" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Municipio" Width="1.5" PointX="3.125" PointY="0.625" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Pasajero" Width="1.5" PointX="10.5" PointY="2.5" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="5.375" PointY="0.5" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.RutaBus" Width="1.5" PointX="7.625" PointY="0.5" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Bus" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Destino" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Origen" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Pasajero" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Ruta" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -25,7 +25,6 @@ namespace Reto.Infraestructure
                 var rutaIngresada = dbContextScope.Ruta.Add(ruta);
                 dbContextScope.SaveChanges();
                 return rutaIngresada;
-
             }
         }
     }

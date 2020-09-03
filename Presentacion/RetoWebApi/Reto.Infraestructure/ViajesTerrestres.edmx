@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="BusId" />
           </Key>
-          <Property Name="BusId" Type="int" Nullable="false" />
+          <Property Name="BusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Capacidad" Type="int" />
           <Property Name="Trasbordo" Type="bit" />
         </EntityType>
@@ -17,7 +17,7 @@
           <Key>
             <PropertyRef Name="MunicipioId" />
           </Key>
-          <Property Name="MunicipioId" Type="int" Nullable="false" />
+          <Property Name="MunicipioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" />
           <Property Name="Departamento" Type="varchar" MaxLength="50" />
         </EntityType>
@@ -25,9 +25,9 @@
           <Key>
             <PropertyRef Name="PasajeroId" />
           </Key>
-          <Property Name="PasajeroId" Type="int" Nullable="false" />
+          <Property Name="PasajeroId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NombreCompleto" Type="varchar(max)" />
-          <Property Name="Tapabocas" Type="bit" />
+          <Property Name="Tapabocas" Type="bit" Nullable="false" />
           <Property Name="RutaBusId" Type="int" />
           <Property Name="SillaAsignada" Type="int" />
         </EntityType>
@@ -35,7 +35,7 @@
           <Key>
             <PropertyRef Name="RutaId" />
           </Key>
-          <Property Name="RutaId" Type="int" Nullable="false" />
+          <Property Name="RutaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" />
           <Property Name="DestinoId" Type="int" Nullable="false" />
           <Property Name="OrigenId" Type="int" Nullable="false" />
@@ -44,7 +44,7 @@
           <Key>
             <PropertyRef Name="RutaBusId" />
           </Key>
-          <Property Name="RutaBusId" Type="int" Nullable="false" />
+          <Property Name="RutaBusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="RutaId" Type="int" />
           <Property Name="BusId" Type="int" />
         </EntityType>
@@ -139,122 +139,30 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ViajesTerrestresModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Municipio">
-          <Key>
-            <PropertyRef Name="MunicipioId" />
-          </Key>
-          <Property Name="MunicipioId" Type="Int32" Nullable="false" />
-          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Ruta" Relationship="Self.FK_Destino" FromRole="Municipio" ToRole="Ruta" />
-          <NavigationProperty Name="Ruta1" Relationship="Self.FK_Origen" FromRole="Municipio" ToRole="Ruta" />
-        </EntityType>
-        <EntityType Name="Pasajero">
-          <Key>
-            <PropertyRef Name="PasajeroId" />
-          </Key>
-          <Property Name="PasajeroId" Type="Int32" Nullable="false" />
-          <Property Name="NombreCompleto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Tapabocas" Type="Boolean" />
-          <Property Name="RutaBusId" Type="Int32" />
-          <Property Name="SillaAsignada" Type="Int32" />
-          <NavigationProperty Name="RutaBus" Relationship="Self.FK_RutaBus_Pasajero" FromRole="Pasajero" ToRole="RutaBus" />
-        </EntityType>
-        <EntityType Name="Ruta">
-          <Key>
-            <PropertyRef Name="RutaId" />
-          </Key>
-          <Property Name="RutaId" Type="Int32" Nullable="false" />
-          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="DestinoId" Type="Int32" Nullable="false" />
-          <Property Name="OrigenId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Municipio" Relationship="Self.FK_Destino" FromRole="Ruta" ToRole="Municipio" />
-          <NavigationProperty Name="Municipio1" Relationship="Self.FK_Origen" FromRole="Ruta" ToRole="Municipio" />
-          <NavigationProperty Name="RutaBus" Relationship="Self.FK_RutaBus_Ruta" FromRole="Ruta" ToRole="RutaBus" />
-        </EntityType>
-        <EntityType Name="RutaBus">
-          <Key>
-            <PropertyRef Name="RutaBusId" />
-          </Key>
-          <Property Name="RutaBusId" Type="Int32" Nullable="false" />
-          <Property Name="RutaId" Type="Int32" />
-          <Property Name="BusId" Type="Int32" />
-          <NavigationProperty Name="Pasajero" Relationship="Self.FK_RutaBus_Pasajero" FromRole="RutaBus" ToRole="Pasajero" />
-          <NavigationProperty Name="Ruta" Relationship="Self.FK_RutaBus_Ruta" FromRole="RutaBus" ToRole="Ruta" />
-          <NavigationProperty Name="Bus" Relationship="ViajesTerrestresModel.FK_RutaBus_Bus" FromRole="RutaBus" ToRole="Bus" />
-        </EntityType>
-        <Association Name="FK_Destino">
-          <End Role="Municipio" Type="Self.Municipio" Multiplicity="1" />
-          <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Municipio">
-              <PropertyRef Name="MunicipioId" />
-            </Principal>
-            <Dependent Role="Ruta">
-              <PropertyRef Name="DestinoId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Origen">
-          <End Role="Municipio" Type="Self.Municipio" Multiplicity="1" />
-          <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Municipio">
-              <PropertyRef Name="MunicipioId" />
-            </Principal>
-            <Dependent Role="Ruta">
-              <PropertyRef Name="OrigenId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_RutaBus_Pasajero">
-          <End Role="Pasajero" Type="Self.Pasajero" Multiplicity="1" />
-          <End Role="RutaBus" Type="Self.RutaBus" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="Pasajero">
-              <PropertyRef Name="PasajeroId" />
-            </Principal>
-            <Dependent Role="RutaBus">
-              <PropertyRef Name="RutaBusId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_RutaBus_Ruta">
-          <End Role="Ruta" Type="Self.Ruta" Multiplicity="0..1" />
-          <End Role="RutaBus" Type="Self.RutaBus" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Ruta">
-              <PropertyRef Name="RutaId" />
-            </Principal>
-            <Dependent Role="RutaBus">
-              <PropertyRef Name="RutaId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="ViajesTerrestresEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Municipio" EntityType="Self.Municipio" />
-          <EntitySet Name="Pasajero" EntityType="Self.Pasajero" />
-          <EntitySet Name="Ruta" EntityType="Self.Ruta" />
-          <EntitySet Name="RutaBus" EntityType="Self.RutaBus" />
-          <AssociationSet Name="FK_Destino" Association="Self.FK_Destino">
+          <EntitySet Name="Bus" EntityType="ViajesTerrestresModel.Bus" />
+          <EntitySet Name="Municipio" EntityType="ViajesTerrestresModel.Municipio" />
+          <EntitySet Name="Pasajero" EntityType="ViajesTerrestresModel.Pasajero" />
+          <EntitySet Name="Ruta" EntityType="ViajesTerrestresModel.Ruta" />
+          <EntitySet Name="RutaBus" EntityType="ViajesTerrestresModel.RutaBus" />
+          <AssociationSet Name="FK_RutaBus_Bus" Association="ViajesTerrestresModel.FK_RutaBus_Bus">
+            <End Role="Bus" EntitySet="Bus" />
+            <End Role="RutaBus" EntitySet="RutaBus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Destino" Association="ViajesTerrestresModel.FK_Destino">
             <End Role="Municipio" EntitySet="Municipio" />
             <End Role="Ruta" EntitySet="Ruta" />
           </AssociationSet>
-          <AssociationSet Name="FK_Origen" Association="Self.FK_Origen">
+          <AssociationSet Name="FK_Origen" Association="ViajesTerrestresModel.FK_Origen">
             <End Role="Municipio" EntitySet="Municipio" />
             <End Role="Ruta" EntitySet="Ruta" />
           </AssociationSet>
-          <AssociationSet Name="FK_RutaBus_Pasajero" Association="Self.FK_RutaBus_Pasajero">
+          <AssociationSet Name="FK_RutaBus_Pasajero" Association="ViajesTerrestresModel.FK_RutaBus_Pasajero">
             <End Role="Pasajero" EntitySet="Pasajero" />
             <End Role="RutaBus" EntitySet="RutaBus" />
           </AssociationSet>
-          <AssociationSet Name="FK_RutaBus_Ruta" Association="Self.FK_RutaBus_Ruta">
+          <AssociationSet Name="FK_RutaBus_Ruta" Association="ViajesTerrestresModel.FK_RutaBus_Ruta">
             <End Role="Ruta" EntitySet="Ruta" />
-            <End Role="RutaBus" EntitySet="RutaBus" />
-          </AssociationSet>
-          <EntitySet Name="Bus" EntityType="ViajesTerrestresModel.Bus" />
-          <AssociationSet Name="FK_RutaBus_Bus" Association="ViajesTerrestresModel.FK_RutaBus_Bus">
-            <End Role="Bus" EntitySet="Bus" />
             <End Role="RutaBus" EntitySet="RutaBus" />
           </AssociationSet>
         </EntityContainer>
@@ -262,10 +170,54 @@
           <Key>
             <PropertyRef Name="BusId" />
           </Key>
-          <Property Name="BusId" Type="Int32" Nullable="false" />
+          <Property Name="BusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Capacidad" Type="Int32" />
           <Property Name="Trasbordo" Type="Boolean" />
           <NavigationProperty Name="RutaBus" Relationship="ViajesTerrestresModel.FK_RutaBus_Bus" FromRole="Bus" ToRole="RutaBus" />
+        </EntityType>
+        <EntityType Name="Municipio">
+          <Key>
+            <PropertyRef Name="MunicipioId" />
+          </Key>
+          <Property Name="MunicipioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Ruta" Relationship="ViajesTerrestresModel.FK_Destino" FromRole="Municipio" ToRole="Ruta" />
+          <NavigationProperty Name="Ruta1" Relationship="ViajesTerrestresModel.FK_Origen" FromRole="Municipio" ToRole="Ruta" />
+        </EntityType>
+        <EntityType Name="Pasajero">
+          <Key>
+            <PropertyRef Name="PasajeroId" />
+          </Key>
+          <Property Name="PasajeroId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NombreCompleto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tapabocas" Type="Boolean" Nullable="false" />
+          <Property Name="RutaBusId" Type="Int32" />
+          <Property Name="SillaAsignada" Type="Int32" />
+          <NavigationProperty Name="RutaBus" Relationship="ViajesTerrestresModel.FK_RutaBus_Pasajero" FromRole="Pasajero" ToRole="RutaBus" />
+        </EntityType>
+        <EntityType Name="Ruta">
+          <Key>
+            <PropertyRef Name="RutaId" />
+          </Key>
+          <Property Name="RutaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DestinoId" Type="Int32" Nullable="false" />
+          <Property Name="OrigenId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Municipio" Relationship="ViajesTerrestresModel.FK_Destino" FromRole="Ruta" ToRole="Municipio" />
+          <NavigationProperty Name="Municipio1" Relationship="ViajesTerrestresModel.FK_Origen" FromRole="Ruta" ToRole="Municipio" />
+          <NavigationProperty Name="RutaBus" Relationship="ViajesTerrestresModel.FK_RutaBus_Ruta" FromRole="Ruta" ToRole="RutaBus" />
+        </EntityType>
+        <EntityType Name="RutaBus">
+          <Key>
+            <PropertyRef Name="RutaBusId" />
+          </Key>
+          <Property Name="RutaBusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RutaId" Type="Int32" />
+          <Property Name="BusId" Type="Int32" />
+          <NavigationProperty Name="Bus" Relationship="ViajesTerrestresModel.FK_RutaBus_Bus" FromRole="RutaBus" ToRole="Bus" />
+          <NavigationProperty Name="Pasajero" Relationship="ViajesTerrestresModel.FK_RutaBus_Pasajero" FromRole="RutaBus" ToRole="Pasajero" />
+          <NavigationProperty Name="Ruta" Relationship="ViajesTerrestresModel.FK_RutaBus_Ruta" FromRole="RutaBus" ToRole="Ruta" />
         </EntityType>
         <Association Name="FK_RutaBus_Bus">
           <End Type="ViajesTerrestresModel.Bus" Role="Bus" Multiplicity="0..1" />
@@ -279,57 +231,105 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Destino">
+          <End Type="ViajesTerrestresModel.Municipio" Role="Municipio" Multiplicity="1" />
+          <End Type="ViajesTerrestresModel.Ruta" Role="Ruta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Municipio">
+              <PropertyRef Name="MunicipioId" />
+            </Principal>
+            <Dependent Role="Ruta">
+              <PropertyRef Name="DestinoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Origen">
+          <End Type="ViajesTerrestresModel.Municipio" Role="Municipio" Multiplicity="1" />
+          <End Type="ViajesTerrestresModel.Ruta" Role="Ruta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Municipio">
+              <PropertyRef Name="MunicipioId" />
+            </Principal>
+            <Dependent Role="Ruta">
+              <PropertyRef Name="OrigenId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RutaBus_Pasajero">
+          <End Type="ViajesTerrestresModel.Pasajero" Role="Pasajero" Multiplicity="1" />
+          <End Type="ViajesTerrestresModel.RutaBus" Role="RutaBus" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Pasajero">
+              <PropertyRef Name="PasajeroId" />
+            </Principal>
+            <Dependent Role="RutaBus">
+              <PropertyRef Name="RutaBusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RutaBus_Ruta">
+          <End Type="ViajesTerrestresModel.Ruta" Role="Ruta" Multiplicity="0..1" />
+          <End Type="ViajesTerrestresModel.RutaBus" Role="RutaBus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ruta">
+              <PropertyRef Name="RutaId" />
+            </Principal>
+            <Dependent Role="RutaBus">
+              <PropertyRef Name="RutaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="ViajesTerrestresModelStoreContainer" CdmEntityContainer="ViajesTerrestresEntities">
-          <EntitySetMapping Name="Municipio">
-            <EntityTypeMapping TypeName="ViajesTerrestresModel.Municipio">
-              <MappingFragment StoreEntitySet="Municipio">
-                <ScalarProperty Name="MunicipioId" ColumnName="MunicipioId" />
-                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-                <ScalarProperty Name="Departamento" ColumnName="Departamento" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Pasajero">
-            <EntityTypeMapping TypeName="ViajesTerrestresModel.Pasajero">
-              <MappingFragment StoreEntitySet="Pasajero">
-                <ScalarProperty Name="PasajeroId" ColumnName="PasajeroId" />
-                <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
-                <ScalarProperty Name="Tapabocas" ColumnName="Tapabocas" />
-                <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
-                <ScalarProperty Name="SillaAsignada" ColumnName="SillaAsignada" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Ruta">
-            <EntityTypeMapping TypeName="ViajesTerrestresModel.Ruta">
-              <MappingFragment StoreEntitySet="Ruta">
-                <ScalarProperty Name="RutaId" ColumnName="RutaId" />
-                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-                <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
-                <ScalarProperty Name="OrigenId" ColumnName="OrigenId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="RutaBus">
-            <EntityTypeMapping TypeName="ViajesTerrestresModel.RutaBus">
-              <MappingFragment StoreEntitySet="RutaBus">
-                <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
-                <ScalarProperty Name="RutaId" ColumnName="RutaId" />
-                <ScalarProperty Name="BusId" ColumnName="BusId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Bus">
             <EntityTypeMapping TypeName="ViajesTerrestresModel.Bus">
               <MappingFragment StoreEntitySet="Bus">
                 <ScalarProperty Name="Trasbordo" ColumnName="Trasbordo" />
                 <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
                 <ScalarProperty Name="BusId" ColumnName="BusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Municipio">
+            <EntityTypeMapping TypeName="ViajesTerrestresModel.Municipio">
+              <MappingFragment StoreEntitySet="Municipio">
+                <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="MunicipioId" ColumnName="MunicipioId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pasajero">
+            <EntityTypeMapping TypeName="ViajesTerrestresModel.Pasajero">
+              <MappingFragment StoreEntitySet="Pasajero">
+                <ScalarProperty Name="SillaAsignada" ColumnName="SillaAsignada" />
+                <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
+                <ScalarProperty Name="Tapabocas" ColumnName="Tapabocas" />
+                <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+                <ScalarProperty Name="PasajeroId" ColumnName="PasajeroId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ruta">
+            <EntityTypeMapping TypeName="ViajesTerrestresModel.Ruta">
+              <MappingFragment StoreEntitySet="Ruta">
+                <ScalarProperty Name="OrigenId" ColumnName="OrigenId" />
+                <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="RutaId" ColumnName="RutaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RutaBus">
+            <EntityTypeMapping TypeName="ViajesTerrestresModel.RutaBus">
+              <MappingFragment StoreEntitySet="RutaBus">
+                <ScalarProperty Name="BusId" ColumnName="BusId" />
+                <ScalarProperty Name="RutaId" ColumnName="RutaId" />
+                <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

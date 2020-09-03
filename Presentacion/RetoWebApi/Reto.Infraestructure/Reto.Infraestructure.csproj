@@ -53,14 +53,14 @@
     <Compile Include="Access\RutaBusAccess.cs" />
     <Compile Include="Access\PasajeroAccess.cs" />
     <Compile Include="Access\RutaAccess.cs" />
+    <Compile Include="Access\BusAccess.cs" />
+    <Compile Include="Access\MunicipioAccess.cs" />
     <Compile Include="Bus.cs">
       <DependentUpon>ViajesTerrestres.tt</DependentUpon>
     </Compile>
     <Compile Include="Municipio.cs">
       <DependentUpon>ViajesTerrestres.tt</DependentUpon>
     </Compile>
-    <Compile Include="Access\BusAccess.cs" />
-    <Compile Include="Access\MunicipioAccess.cs" />
     <Compile Include="Pasajero.cs">
       <DependentUpon>ViajesTerrestres.tt</DependentUpon>
     </Compile>
