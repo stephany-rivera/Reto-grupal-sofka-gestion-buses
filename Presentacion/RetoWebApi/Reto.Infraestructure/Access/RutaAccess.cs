@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Reto.Infraestructure
+namespace Reto.Infraestructure.Access
 {
-    class RutaAccess
+    public class RutaAccess
     {
         public static List<Ruta> ObtenerRuta()
         {

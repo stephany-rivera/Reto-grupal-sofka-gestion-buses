@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ViajesTerrestresModelStoreContainer" CdmEntityContainer="ViajesTerrestresEntities">
+    <EntitySetMapping Name="Bus">
+      <EntityTypeMapping TypeName="ViajesTerrestresModel.Bus">
+        <MappingFragment StoreEntitySet="Bus">
+          <ScalarProperty Name="Trasbordo" ColumnName="Trasbordo" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipio">
+      <EntityTypeMapping TypeName="ViajesTerrestresModel.Municipio">
+        <MappingFragment StoreEntitySet="Municipio">
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="MunicipioId" ColumnName="MunicipioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pasajero">
+      <EntityTypeMapping TypeName="ViajesTerrestresModel.Pasajero">
+        <MappingFragment StoreEntitySet="Pasajero">
+          <ScalarProperty Name="SillaAsignada" ColumnName="SillaAsignada" />
+          <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
+          <ScalarProperty Name="Tapabocas" ColumnName="Tapabocas" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="PasajeroId" ColumnName="PasajeroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ruta">
+      <EntityTypeMapping TypeName="ViajesTerrestresModel.Ruta">
+        <MappingFragment StoreEntitySet="Ruta">
+          <ScalarProperty Name="OrigenId" ColumnName="OrigenId" />
+          <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="RutaId" ColumnName="RutaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RutaBus">
+      <EntityTypeMapping TypeName="ViajesTerrestresModel.RutaBus">
+        <MappingFragment StoreEntitySet="RutaBus">
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+          <ScalarProperty Name="RutaId" ColumnName="RutaId" />
+          <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

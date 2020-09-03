@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Reto.Infraestructure
+namespace Reto.Infraestructure.Access
 {
-    class BusAccess
+    public class BusAccess
     {
         public static List<Bus> ObtenerBus()
         {

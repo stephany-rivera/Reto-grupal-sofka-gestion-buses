@@ -1,0 +1,2 @@
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csprojAssemblyReference.cache
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csproj.CoreCompileInputs.cache
