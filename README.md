@@ -30,3 +30,5 @@ Son preguntas que se debe cuestionar para implementar el caso de uso.
 |5|	Se tiene una clase para asociar los pasajero a los buses, y esta clase valida las asociaciones	|20 %|
 |6|	Se tiene una funcionalidad para crear pasajeros, buses y municipios	|15 %|
 |7|	Consulta que busque un pasajero en todos los buses y que muestre el origen y destino de ese pasajero.	|10 %|
+
+Hola
