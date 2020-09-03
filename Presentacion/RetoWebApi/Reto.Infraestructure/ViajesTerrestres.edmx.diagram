@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="45aa30383b044603980dc9d7f9be283f" Name="Diagram1">
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Municipio" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Pasajero" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.RutaBus" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Destino" ManuallyRouted="false" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Origen" ManuallyRouted="false" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Pasajero" ManuallyRouted="false" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Ruta" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Bus" Width="1.5" PointX="7.875" PointY="1.5" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Bus" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

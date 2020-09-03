@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoWebApi", "RetoWebApi\RetoWebApi.csproj", "{CACF3194-C197-416D-BFFE-605BC0F5D41F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BaseDatos", "BaseDatos", "{EBBD4199-1A1B-44CD-A2A7-FB61EBBB9CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto.Infraestructure", "Reto.Infraestructure\Reto.Infraestructure.csproj", "{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CACF3194-C197-416D-BFFE-605BC0F5D41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACF3194-C197-416D-BFFE-605BC0F5D41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACF3194-C197-416D-BFFE-605BC0F5D41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACF3194-C197-416D-BFFE-605BC0F5D41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{006E5CE6-A57D-4CB6-9E15-4A6376A604F0} = {EBBD4199-1A1B-44CD-A2A7-FB61EBBB9CCF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB3E7877-7D2D-473F-AEB6-BECFEB398274}
+	EndGlobalSection
+EndGlobal
