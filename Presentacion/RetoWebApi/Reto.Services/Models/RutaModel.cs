@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Reto.Services.Models
 {
-    public class BusModel
+    public class RutaModel
     {
-        public int BusId { get; set; }
-        public int? Capacidad { get; set; }
-        public bool? Trasbordo { get; set; }
+        public int RutaId { get; set; }
+        public string Nombre { get; set; }
+        public int DestinoId { get; set; }
+        public bool? Transbordo { get; set; }
     }
 }

@@ -18,7 +18,6 @@ namespace Reto.Infraestructure
         public Municipio()
         {
             this.Ruta = new HashSet<Ruta>();
-            this.Ruta1 = new HashSet<Ruta>();
         }
     
         public int MunicipioId { get; set; }
@@ -27,7 +26,5 @@ namespace Reto.Infraestructure
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ruta> Ruta { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ruta> Ruta1 { get; set; }
     }
 }

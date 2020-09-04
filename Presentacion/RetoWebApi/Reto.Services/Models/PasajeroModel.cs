@@ -6,9 +6,10 @@ namespace Reto.Services.Models
 {
     public class PasajeroModel
     {
-        public int RutaId { get; set; }
-        public string Nombre { get; set; }
-        public int DestinoId { get; set; }
-        public int OrigenId { get; set; }
+        public int PasajeroId { get; set; }
+        public string NombreCompleto { get; set; }
+        public bool Tapabocas { get; set; }
+        public int? RutaBusId { get; set; }
+        public int? SillaAsignada { get; set; }
     }
 }

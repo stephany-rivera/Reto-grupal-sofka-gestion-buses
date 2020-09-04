@@ -18,6 +18,7 @@ namespace Reto.Infraestructure
         public ViajesTerrestresEntities()
             : base("name=ViajesTerrestresEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

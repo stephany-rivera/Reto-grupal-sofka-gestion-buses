@@ -6,7 +6,7 @@ using Reto.Infraestructure;
 
 namespace RetoWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Municipio/{action}", Name = "Municipio")]
 
     public class MunicipioController : ApiController
     {

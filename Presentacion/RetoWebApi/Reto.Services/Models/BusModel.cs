@@ -8,6 +8,6 @@ namespace Reto.Services.Models
     {
         public int BusId { get; set; }
         public int? Capacidad { get; set; }
-        public bool? Trasbordo { get; set; }
+        public int? CapacidadActual { get; set; }
     }
 }

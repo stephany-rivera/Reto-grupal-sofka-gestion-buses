@@ -22,7 +22,7 @@ namespace Reto.Infraestructure
     
         public int BusId { get; set; }
         public Nullable<int> Capacidad { get; set; }
-        public Nullable<bool> Trasbordo { get; set; }
+        public Nullable<int> CapacidadActual { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RutaBus> RutaBus { get; set; }

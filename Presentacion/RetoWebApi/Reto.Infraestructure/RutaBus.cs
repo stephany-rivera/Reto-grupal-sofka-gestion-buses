@@ -14,12 +14,19 @@ namespace Reto.Infraestructure
     
     public partial class RutaBus
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public RutaBus()
+        {
+            this.Pasajero = new HashSet<Pasajero>();
+        }
+    
         public int RutaBusId { get; set; }
         public Nullable<int> RutaId { get; set; }
         public Nullable<int> BusId { get; set; }
     
         public virtual Bus Bus { get; set; }
-        public virtual Pasajero Pasajero { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pasajero> Pasajero { get; set; }
         public virtual Ruta Ruta { get; set; }
     }
 }

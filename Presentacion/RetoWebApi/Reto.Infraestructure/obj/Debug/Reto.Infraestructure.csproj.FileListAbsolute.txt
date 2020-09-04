@@ -22,3 +22,14 @@ C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructur
 C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csproj.CopyComplete
 C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.dll
 C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.pdb
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\Reto.Infraestructure.dll.config
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\Reto.Infraestructure.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\Reto.Infraestructure.pdb
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csproj.CopyComplete
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.pdb

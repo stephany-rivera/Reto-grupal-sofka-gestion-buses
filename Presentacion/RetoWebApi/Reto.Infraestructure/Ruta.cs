@@ -23,10 +23,9 @@ namespace Reto.Infraestructure
         public int RutaId { get; set; }
         public string Nombre { get; set; }
         public int DestinoId { get; set; }
-        public int OrigenId { get; set; }
+        public Nullable<bool> Transbordo { get; set; }
     
         public virtual Municipio Municipio { get; set; }
-        public virtual Municipio Municipio1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RutaBus> RutaBus { get; set; }
     }
