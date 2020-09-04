@@ -8,12 +8,35 @@ namespace Reto.Infraestructure.Access
 {
     public class BusAccess
     {
-        public static List<Bus> ObtenerBus()
+        public static List<Bus> ObtenerBuses()
         {
 
             using (var dbContextScope = new ViajesTerrestresEntities())
             {
                 return dbContextScope.Bus.ToList();
+            }
+        }
+
+        public static Bus ObtenerBus(int id)
+        {
+
+            using (var dbContextScope = new ViajesTerrestresEntities())
+            {
+                
+                return dbContextScope.Bus.Where(x => x.BusId == id).FirstOrDefault();
+            }
+        }
+
+        public static Bus ActualizarBus(Bus bus)
+        {
+
+            using (var dbContextScope = new ViajesTerrestresEntities())
+            {
+
+                var resultado = dbContextScope.Bus.Where(x => x.BusId == bus.BusId).FirstOrDefault();
+                resultado.CapacidadActual = bus.CapacidadActual;
+                dbContextScope.SaveChanges();
+                return resultado;
             }
         }
 

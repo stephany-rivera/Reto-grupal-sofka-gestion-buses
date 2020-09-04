@@ -13,7 +13,7 @@ namespace RetoWebApi.Controllers
         [HttpGet]
         public HttpResponseMessage ObtenerBus()
         {
-           var response = BusService.ObtenerBus();
+           var response = BusService.ObtenerBuses();
             HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
             return result;
         }

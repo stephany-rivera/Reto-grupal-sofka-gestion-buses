@@ -12,3 +12,17 @@ C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\ClassLibra
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\Reto.Services.csproj.CopyComplete
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\AutoMapper.dll
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\Reto.Infraestructure.dll
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\Reto.Infraestructure.pdb
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\Reto.Infraestructure.dll.config
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\AutoMapper.xml
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\Reto.Services.csprojAssemblyReference.cache
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\Reto.Services.csproj.CoreCompileInputs.cache
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\Reto.Services.csproj.CopyComplete
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

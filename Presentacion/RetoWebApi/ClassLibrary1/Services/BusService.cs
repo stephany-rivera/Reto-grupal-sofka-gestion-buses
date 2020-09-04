@@ -9,12 +9,12 @@ namespace Reto.Services
 {
     public class BusService
     {
-        public static BusResponse ObtenerBus()
+        public static BusResponse ObtenerBuses()
         {
             var mensajes = new List<Mensaje>();
             if (mensajes.Count == 0)
             {
-                List<Bus> buses = BusAccess.ObtenerBus();
+                List<Bus> buses = BusAccess.ObtenerBuses();
                 return new BusResponse(buses, true, mensajes);
             }
             else

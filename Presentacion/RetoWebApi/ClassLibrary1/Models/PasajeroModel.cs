@@ -11,5 +11,7 @@ namespace Reto.Services.Models
         public bool Tapabocas { get; set; }
         public int? RutaBusId { get; set; }
         public int? SillaAsignada { get; set; }
+        // parametro complementario
+        public string  NombreDestino { get; set; }
     }
 }
