@@ -9,7 +9,7 @@ namespace Reto.Services
 {
     public class BusService
     {
-        public static BusResponse ObtenerPruebas()
+        public static BusResponse ObtenerBus()
         {
             var mensajes = new List<Mensaje>();
             if (mensajes.Count == 0)
@@ -22,5 +22,22 @@ namespace Reto.Services
                 return new BusResponse(null, false, mensajes);
             }
         }
+
+        public static BusResponse CrearBus(Bus bus)
+        {
+            var mensajes = new List<Mensaje>();
+            if (mensajes.Count == 0)
+            {
+                BusAccess.CrearBus(bus);
+                return new BusResponse(null, true, mensajes);
+            }
+            else
+            {
+                return new BusResponse(null, false, mensajes);
+            }
+
+        }
     }
+
+
 }

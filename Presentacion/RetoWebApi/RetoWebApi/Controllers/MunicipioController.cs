@@ -1,17 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Reto.Services;
+using Reto.Infraestructure;
 
 namespace RetoWebApi.Controllers
 {
-    public class MunicipioController : Controller
+    [Route("api/[controller]")]
+
+    public class MunicipioController : ApiController
     {
-        // GET: Municipio
-        public ActionResult Index()
+        [HttpGet]
+        public HttpResponseMessage ObtenerMunicipio()
         {
-            return View();
+            var response = MunicipioService.ObtenerMunicipio();
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
         }
+
+        [HttpPost]
+        public HttpResponseMessage CrearMunicipio([FromBody] Municipio Municipio)
+        {
+            var response = MunicipioService.CrearMunicipio(Municipio);
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
+        }
+
+
     }
 }
