@@ -6,7 +6,7 @@
     </Key>
     <Property Name="BusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Capacidad" Type="int" />
-    <Property Name="Trasbordo" Type="bit" />
+    <Property Name="CapacidadActual" Type="int" />
   </EntityType>
   <EntityType Name="Municipio">
     <Key>
@@ -33,7 +33,7 @@
     <Property Name="RutaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nombre" Type="varchar" MaxLength="50" />
     <Property Name="DestinoId" Type="int" Nullable="false" />
-    <Property Name="OrigenId" Type="int" Nullable="false" />
+    <Property Name="Transbordo" Type="bit" />
   </EntityType>
   <EntityType Name="RutaBus">
     <Key>
@@ -55,15 +55,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Origen">
-    <End Role="Municipio" Type="Self.Municipio" Multiplicity="1" />
-    <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
+  <Association Name="FK_Pasajero_RutaBus">
+    <End Role="RutaBus" Type="Self.RutaBus" Multiplicity="0..1" />
+    <End Role="Pasajero" Type="Self.Pasajero" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Municipio">
-        <PropertyRef Name="MunicipioId" />
+      <Principal Role="RutaBus">
+        <PropertyRef Name="RutaBusId" />
       </Principal>
-      <Dependent Role="Ruta">
-        <PropertyRef Name="OrigenId" />
+      <Dependent Role="Pasajero">
+        <PropertyRef Name="RutaBusId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -76,18 +76,6 @@
       </Principal>
       <Dependent Role="RutaBus">
         <PropertyRef Name="BusId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_RutaBus_Pasajero">
-    <End Role="Pasajero" Type="Self.Pasajero" Multiplicity="1" />
-    <End Role="RutaBus" Type="Self.RutaBus" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Pasajero">
-        <PropertyRef Name="PasajeroId" />
-      </Principal>
-      <Dependent Role="RutaBus">
-        <PropertyRef Name="RutaBusId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -113,16 +101,12 @@
       <End Role="Municipio" EntitySet="Municipio" />
       <End Role="Ruta" EntitySet="Ruta" />
     </AssociationSet>
-    <AssociationSet Name="FK_Origen" Association="Self.FK_Origen">
-      <End Role="Municipio" EntitySet="Municipio" />
-      <End Role="Ruta" EntitySet="Ruta" />
+    <AssociationSet Name="FK_Pasajero_RutaBus" Association="Self.FK_Pasajero_RutaBus">
+      <End Role="RutaBus" EntitySet="RutaBus" />
+      <End Role="Pasajero" EntitySet="Pasajero" />
     </AssociationSet>
     <AssociationSet Name="FK_RutaBus_Bus" Association="Self.FK_RutaBus_Bus">
       <End Role="Bus" EntitySet="Bus" />
-      <End Role="RutaBus" EntitySet="RutaBus" />
-    </AssociationSet>
-    <AssociationSet Name="FK_RutaBus_Pasajero" Association="Self.FK_RutaBus_Pasajero">
-      <End Role="Pasajero" EntitySet="Pasajero" />
       <End Role="RutaBus" EntitySet="RutaBus" />
     </AssociationSet>
     <AssociationSet Name="FK_RutaBus_Ruta" Association="Self.FK_RutaBus_Ruta">

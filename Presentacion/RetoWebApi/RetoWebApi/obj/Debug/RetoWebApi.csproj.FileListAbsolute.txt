@@ -163,7 +163,6 @@ C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\RetoWebApi\obj\Debu
 C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csproj.CopyComplete
 C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.dll
 C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.pdb
-C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\RetoWebApi.dll.config
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\RetoWebApi.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\RetoWebApi.pdb
@@ -217,6 +216,8 @@ C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\roslyn\VBCSCompiler.exe
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Antlr3.Runtime.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\AutoMapper.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\ClassLibrary1.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\EntityFramework.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\EntityFramework.SqlServer.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -251,7 +252,6 @@ C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Newtonsoft.Json.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Reto.Infraestructure.dll
-C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Reto.Services.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\System.Buffers.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\System.ComponentModel.Annotations.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\System.Diagnostics.DiagnosticSource.dll
@@ -271,9 +271,10 @@ C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\System.Web.WebPages.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\System.Web.WebPages.Razor.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\WebGrease.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\ClassLibrary1.pdb
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Reto.Infraestructure.pdb
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Reto.Infraestructure.dll.config
-C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Reto.Services.pdb
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\AutoMapper.xml
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\EntityFramework.xml
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\EntityFramework.SqlServer.xml
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
@@ -323,6 +324,7 @@ C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Antlr3.Runtime.pdb
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csprojAssemblyReference.cache
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.csproj.CopyComplete
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.dll
 C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\RetoWebApi\obj\Debug\RetoWebApi.pdb

@@ -29,7 +29,7 @@ namespace Reto.Services
             var mensajes = new List<Mensaje>();
             var rutas = RutaAccess.ObtenerRuta();
             var rutaBus = RutaBusAccess.ObtenerRutaBus();
-            rutas.Where(x=> x.Nombre == Pasajero.)
+            //rutas.Where(x=> x.Nombre == Pasajero.)
 
 
 

@@ -4,7 +4,7 @@
     <EntitySetMapping Name="Bus">
       <EntityTypeMapping TypeName="ViajesTerrestresModel.Bus">
         <MappingFragment StoreEntitySet="Bus">
-          <ScalarProperty Name="Trasbordo" ColumnName="Trasbordo" />
+          <ScalarProperty Name="CapacidadActual" ColumnName="CapacidadActual" />
           <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
           <ScalarProperty Name="BusId" ColumnName="BusId" />
         </MappingFragment>
@@ -33,7 +33,7 @@
     <EntitySetMapping Name="Ruta">
       <EntityTypeMapping TypeName="ViajesTerrestresModel.Ruta">
         <MappingFragment StoreEntitySet="Ruta">
-          <ScalarProperty Name="OrigenId" ColumnName="OrigenId" />
+          <ScalarProperty Name="Transbordo" ColumnName="Transbordo" />
           <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="RutaId" ColumnName="RutaId" />

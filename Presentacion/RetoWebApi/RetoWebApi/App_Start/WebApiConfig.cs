@@ -21,7 +21,7 @@ namespace RetoWebApi
                 defaults: new { id = RouteParameter.Optional }
             );
             // ConfigAutomapper
-            //ConfigAutomapper.Config();
+            ConfigAutomapper.Config();
         }        
     }
 }

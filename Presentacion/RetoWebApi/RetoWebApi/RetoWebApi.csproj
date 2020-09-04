@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -276,6 +279,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\BusController.cs" />
     <Compile Include="Controllers\MunicipioController.cs" />
     <Compile Include="Controllers\PasajeroController.cs" />
@@ -376,13 +380,13 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\Reto.Services.csproj">
+      <Project>{b0503c04-6ffd-4ca2-acd9-b95157fca4a1}</Project>
+      <Name>Reto.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Reto.Infraestructure\Reto.Infraestructure.csproj">
       <Project>{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}</Project>
       <Name>Reto.Infraestructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Reto.Services\Reto.Services.csproj">
-      <Project>{262ddaab-ce9f-415e-ab98-2f77996ecf8d}</Project>
-      <Name>Reto.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
