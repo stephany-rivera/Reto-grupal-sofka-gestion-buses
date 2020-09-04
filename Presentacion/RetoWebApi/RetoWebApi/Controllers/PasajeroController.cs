@@ -1,17 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Reto.Services;
+using Reto.Infraestructure;
 
 namespace RetoWebApi.Controllers
 {
-    public class PasajeroController : Controller
+    [Route("api/[controller]")]
+
+    public class PasajeroController : ApiController
     {
-        // GET: Pasajero
-        public ActionResult Index()
+        [HttpGet]
+        public HttpResponseMessage ObtenerPasajero()
         {
-            return View();
+            var response = PasajeroService.ObtenerPasajero();
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
         }
+
+        [HttpPost]
+        public HttpResponseMessage CrearPasajero([FromBody] Pasajero Pasajero)
+        {
+            var response = PasajeroService.CrearPasajero(Pasajero);
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
+        }
+
+
     }
 }

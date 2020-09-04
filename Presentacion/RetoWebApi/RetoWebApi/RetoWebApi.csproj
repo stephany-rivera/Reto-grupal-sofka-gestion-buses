@@ -376,6 +376,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Reto.Infraestructure\Reto.Infraestructure.csproj">
+      <Project>{006E5CE6-A57D-4CB6-9E15-4A6376A604F0}</Project>
+      <Name>Reto.Infraestructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Reto.Services\Reto.Services.csproj">
       <Project>{262ddaab-ce9f-415e-ab98-2f77996ecf8d}</Project>
       <Name>Reto.Services</Name>

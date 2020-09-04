@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Reto.Services.Response.Entidad
 {
-    class MunicipioResponse : BaseResponse
+    public class MunicipioResponse : BaseResponse
     {
-        public Municipio Municipio { get; set; }
+        public List <Municipio> Municipio { get; set; }
 
-        public MunicipioResponse(Municipio municipio, bool success = false, IEnumerable<Mensaje> mensajes = null) : base(success, mensajes)
+        public MunicipioResponse(List<Municipio> municipio, bool success = false, IEnumerable<Mensaje> mensajes = null) : base(success, mensajes)
         {
             Municipio = municipio;
         }

@@ -10,3 +10,15 @@ C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Infraes
 C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.dll
 C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.pdb
 C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\Reto.Infraestructure.dll.config
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\Reto.Infraestructure.dll
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\Reto.Infraestructure.pdb
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.csproj.CopyComplete
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.dll
+C:\Users\ADMIN\Documents\Stephanie\a\Presentacion\RetoWebApi\Reto.Infraestructure\obj\Debug\Reto.Infraestructure.pdb

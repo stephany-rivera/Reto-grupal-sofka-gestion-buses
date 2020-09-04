@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Reto.Services.Response.Entidad
 {
-    class RutaBusResponse : BaseResponse
+    public class RutaBusResponse : BaseResponse
     {
-        public RutaBus RutaBus { get; set; }
+        public List <RutaBus> RutaBus { get; set; }
 
-        public RutaBusResponse(RutaBus rutaBus, bool success = false, IEnumerable<Mensaje> mensajes = null) : base(success, mensajes)
+        public RutaBusResponse(List <RutaBus> rutaBus, bool success = false, IEnumerable<Mensaje> mensajes = null) : base(success, mensajes)
         {
             RutaBus = rutaBus;
         }

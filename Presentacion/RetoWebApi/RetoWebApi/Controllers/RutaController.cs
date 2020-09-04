@@ -1,17 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Reto.Services;
+using Reto.Infraestructure;
 
 namespace RetoWebApi.Controllers
 {
-    public class RutaController : Controller
+    [Route("api/[controller]")]
+    public class RutaController : ApiController
     {
-        // GET: Ruta
-        public ActionResult Index()
+        [HttpGet]
+        public HttpResponseMessage ObtenerRuta()
         {
-            return View();
+            var response = RutaService.ObtenerRuta();
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
         }
+
+        [HttpPost]
+        public HttpResponseMessage CrearRuta([FromBody] Ruta Ruta)
+        {
+            var response = RutaService.CrearRuta(Ruta);
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
+        }
+
+
     }
 }
