@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Presentacion"
+    "\\Presentacion",
+    "\\Presentacion\\RetoWebApi",
+    "\\Presentacion\\RetoWebApi\\Reto.Services"
   ],
-  "SelectedNode": "\\Presentacion",
+  "SelectedNode": "\\Presentacion\\RetoWebApi\\RetoWebApi.sln",
   "PreviewInSolutionExplorer": false
 }

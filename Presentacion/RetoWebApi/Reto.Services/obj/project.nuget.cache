@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "GzqmwGA5GLQlM3RO9vNfzkhU66ALBP2IJ6+cS/BzsytvlbnzN8eU02hg0bp+AoFshNEb+u6XBkId5CLHcNwFfQ==",
+  "dgSpecHash": "iwWI1OWiK+tzIv1BxjrZPErQZ+eg0TpFyANSgKKuNeO2eoVnrn85NlvRyg7nSrEOsuPajN0cWtaKZBdVDImRQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\manji\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\manji\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

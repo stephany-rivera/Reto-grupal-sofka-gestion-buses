@@ -13,3 +13,17 @@ C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Service
 C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.csproj.CopyComplete
 C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.dll
 C:\Users\manji\OneDrive\Documentos\Proyecto\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.pdb
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\Reto.Services.deps.json
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\Reto.Services.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\Reto.Services.pdb
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\Reto.Infraestructure.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\EntityFramework.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\Reto.Infraestructure.pdb
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\Reto.Infraestructure.dll.config
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.csprojAssemblyReference.cache
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.AssemblyInfo.cs
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.csproj.CopyComplete
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.dll
+C:\Users\user\Documents\Compilados\RetoGrupal\Presentacion\RetoWebApi\Reto.Services\obj\Debug\netstandard2.0\Reto.Services.pdb

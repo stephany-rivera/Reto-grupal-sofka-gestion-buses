@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reto.Services.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -19,6 +20,8 @@ namespace RetoWebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-        }
+            // ConfigAutomapper
+            ConfigAutomapper.Config();
+        }        
     }
 }

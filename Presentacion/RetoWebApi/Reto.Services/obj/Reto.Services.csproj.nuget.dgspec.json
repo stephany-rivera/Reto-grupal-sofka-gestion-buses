@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj": {}
+    "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj": {
+    "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj",
         "projectName": "Reto.Infraestructure",
-        "projectPath": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj"
+        "projectPath": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj": {
+    "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj",
         "projectName": "Reto.Services",
-        "projectPath": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj",
-        "packagesPath": "C:\\Users\\manji\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Services\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Services\\Reto.Services.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\manji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,8 +37,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\manji\\OneDrive\\Documentos\\Proyecto\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj"
+              "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\Compilados\\RetoGrupal\\Presentacion\\RetoWebApi\\Reto.Infraestructure\\Reto.Infraestructure.csproj"
               }
             }
           }
@@ -52,6 +52,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -69,7 +73,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
