@@ -67,7 +67,7 @@ namespace Reto.Services
             var municipioOrigen = municipios.Where(x => x.Nombre.ToLower().Contains(pasajeroModel.PasajeroOrigen.ToLower())).FirstOrDefault();
             if (municipioOrigen == null || municipioDestino == null)
             {
-                mensajes.Add(new Mensaje("El Municipio de Origen o Destino no se encuentran registrados"));
+                mensajes.Add(new Mensaje("El Municipio de Origen o Destino no se encuentran registrados "));
             }
             else
             {
