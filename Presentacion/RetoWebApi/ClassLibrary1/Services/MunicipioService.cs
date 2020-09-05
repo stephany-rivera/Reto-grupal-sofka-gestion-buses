@@ -1,6 +1,8 @@
 ﻿using Reto.Infraestructure;
 using Reto.Infraestructure.Access;
+using Reto.Services.Models;
 using Reto.Services.Response.Entidad;
+using Reto.Services.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +18,8 @@ namespace Reto.Services
             if (mensajes.Count == 0)
             {
                 List<Municipio> municipios = MunicipioAccess.ObtenerMunicipios();
-                return new MunicipioResponse(municipios, true, mensajes);
+                var listaMunicipios = ConfigAutomapper.mapper.Map<List<MunicipioModel>>(municipios);
+                return new MunicipioResponse(listaMunicipios, true, mensajes);
             }
             else
             {
@@ -29,8 +32,13 @@ namespace Reto.Services
             var mensajes = new List<Mensaje>();
             if (mensajes.Count == 0)
             {
-                MunicipioAccess.CrearMunicipio(municipio);
-                return new MunicipioResponse(null, true, mensajes);
+                var municipioCreado = MunicipioAccess.CrearMunicipio(municipio);
+                var municipioModel = ConfigAutomapper.mapper.Map<MunicipioModel>(municipioCreado);
+
+                List<MunicipioModel> listaMunicipio = new List<MunicipioModel>();
+                listaMunicipio.Add(municipioModel);
+
+                return new MunicipioResponse(listaMunicipio, true, mensajes);
             }
             else
             {

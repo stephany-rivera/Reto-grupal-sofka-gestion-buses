@@ -4,6 +4,8 @@ using Reto.Infraestructure.Access;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Reto.Services.Utilities;
+using Reto.Services.Models;
 
 namespace Reto.Services
 {
@@ -15,7 +17,8 @@ namespace Reto.Services
             if (mensajes.Count == 0)
             {
                 List<Bus> buses = BusAccess.ObtenerBuses();
-                return new BusResponse(buses, true, mensajes);
+                var listaBuses = ConfigAutomapper.mapper.Map<List<BusModel>>(buses);
+                return new BusResponse(listaBuses, true, mensajes);
             }
             else
             {
@@ -23,13 +26,18 @@ namespace Reto.Services
             }
         }
 
-        public static BusResponse CrearBus(Bus bus)
+        public static BusResponse CrearBus(BusModel busRequest)
         {
             var mensajes = new List<Mensaje>();
             if (mensajes.Count == 0)
             {
-                BusAccess.CrearBus(bus);
-                return new BusResponse(null, true, mensajes);
+                var bus = ConfigAutomapper.mapper.Map<Bus>(busRequest);
+                bus.CapacidadActual = 0;
+                var busCreado = BusAccess.CrearBus(bus);
+                List<BusModel> listaBus = new List<BusModel>();
+                var busModel = ConfigAutomapper.mapper.Map<BusModel>(busCreado);
+                listaBus.Add(busModel);
+                return new BusResponse(listaBus, true, mensajes);
             }
             else
             {

@@ -37,7 +37,7 @@ namespace Reto.Services
                 var pasajero = Pasajeros.Where(x => x.NombreCompleto.ToLower().Contains(pasajeroModel.NombreCompleto.ToLower())).FirstOrDefault();
 
                 var rutaBus = RutaBusAccess.ObtenerRutaBus().Where(x => x.RutaBusId == pasajero.RutaBusId).FirstOrDefault();
-                var rutaLista = RutaAccess.ObtenerRuta();
+                var rutaLista = RutaAccess.ObtenerRutas();
                 var rutaConsultada = rutaLista.Where(x => x.RutaId == rutaBus.RutaId).FirstOrDefault();
                 var municipioOrigen = municipios.Where(x => x.MunicipioId == rutaConsultada.OrigenId).FirstOrDefault();
                 var municipioDestino = municipios.Where(x => x.MunicipioId == rutaConsultada.DestinoId).FirstOrDefault();
@@ -61,7 +61,7 @@ namespace Reto.Services
         {
             var mensajes = new List<Mensaje>();
             List<Ruta> rutaDestino = new List<Ruta>();
-            var rutas = RutaAccess.ObtenerRuta();
+            var rutas = RutaAccess.ObtenerRutas();
             var municipios = MunicipioAccess.ObtenerMunicipios();
             var municipioDestino = municipios.Where(x => x.Nombre.ToLower().Contains(pasajeroModel.PasajeroDestino.ToLower())).FirstOrDefault();
             var municipioOrigen = municipios.Where(x => x.Nombre.ToLower().Contains(pasajeroModel.PasajeroOrigen.ToLower())).FirstOrDefault();

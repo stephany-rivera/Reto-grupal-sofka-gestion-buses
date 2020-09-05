@@ -3,10 +3,11 @@ using System.Net.Http;
 using System.Web.Http;
 using Reto.Services;
 using Reto.Infraestructure;
+using Reto.Services.Models;
 
 namespace RetoWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/RutaBus/{action}", Name = "RutaBus")]
     public class RutaBusController : ApiController
     {
         [HttpGet]
@@ -18,7 +19,7 @@ namespace RetoWebApi.Controllers
         }
 
         [HttpPost]
-        public HttpResponseMessage CrearRutaBus([FromBody] RutaBus RutaBus)
+        public HttpResponseMessage CrearRutaBus([FromBody] RutaBusModel RutaBus)
         {
             var response = RutaBusService.CrearRutaBus(RutaBus);
             HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);

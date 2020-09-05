@@ -31,4 +31,11 @@ Son preguntas que se debe cuestionar para implementar el caso de uso.
 |6|	Se tiene una funcionalidad para crear pasajeros, buses y municipios	|15 %|
 |7|	Consulta que busque un pasajero en todos los buses y que muestre el origen y destino de ese pasajero.	|10 %|
 
-Hola
+## Documentación
+
+En el siguiente enlace se encuentra alojado todos los procedimientos para consumir el Api Desarrollado:
+https://marcoxio.gitbook.io/viajesterrestres/
+
+
+Nota: La capa Reto.Services está alojada en la carpeta ClassLibrary1
+

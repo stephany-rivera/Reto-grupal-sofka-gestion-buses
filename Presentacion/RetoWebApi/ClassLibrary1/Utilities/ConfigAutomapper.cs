@@ -12,10 +12,10 @@ namespace Reto.Services.Utilities
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<MunicipioModel, Municipio>().ReverseMap();
+                cfg.CreateMap<BusModel, Bus>().ReverseMap();
                 cfg.CreateMap<PasajeroModel, Pasajero>().ReverseMap();
-
-                		
-
+                cfg.CreateMap<RutaModel, Ruta>().ReverseMap();
+                cfg.CreateMap<RutaBusModel, RutaBus>().ReverseMap();
             });
             mapper = config.CreateMapper();
         }

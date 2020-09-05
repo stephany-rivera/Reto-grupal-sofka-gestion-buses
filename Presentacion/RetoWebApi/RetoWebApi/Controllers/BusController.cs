@@ -3,15 +3,16 @@ using System.Net.Http;
 using System.Web.Http;
 using Reto.Services;
 using Reto.Infraestructure;
+using Reto.Services.Models;
 
 namespace RetoWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Bus/{action}", Name = "Bus")]
 
     public class BusController : ApiController
     {
         [HttpGet]
-        public HttpResponseMessage ObtenerBus()
+        public HttpResponseMessage ObtenerBuses()
         {
            var response = BusService.ObtenerBuses();
             HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
@@ -19,7 +20,7 @@ namespace RetoWebApi.Controllers
         }
 
         [HttpPost]
-        public HttpResponseMessage CrearBus([FromBody] Bus bus)
+        public HttpResponseMessage CrearBus([FromBody] BusModel bus)
         {
             var response = BusService.CrearBus(bus);
             HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);

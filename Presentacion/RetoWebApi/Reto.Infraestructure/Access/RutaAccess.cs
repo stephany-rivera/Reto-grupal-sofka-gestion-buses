@@ -8,7 +8,7 @@ namespace Reto.Infraestructure.Access
 {
     public class RutaAccess
     {
-        public static List<Ruta> ObtenerRuta()
+        public static List<Ruta> ObtenerRutas()
         {
 
             using (var dbContextScope = new ViajesTerrestresEntities())

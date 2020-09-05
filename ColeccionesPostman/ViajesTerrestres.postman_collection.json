@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "eeb8adc3-1331-4c58-9ff3-4c8fc5c80bdc",
+		"name": "ViajesTerrestres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Bus",
+			"item": [
+				{
+					"name": "ObtenerBuses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/Bus/ObtenerBuses",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Bus",
+								"ObtenerBuses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Bus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Capacidad\" : 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/Bus/CrearBus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Bus",
+								"CrearBus"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pasajero",
+			"item": [
+				{
+					"name": "CrearPasajero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NombreCompleto\": \"Julian Andres Jerez Nieto\",\r\n    \"PasajeroDestino\" : \"Santa Rosa de Osos\",\r\n    \"PasajeroOrigen\" : \"Medellin\",\r\n    \"Tapabocas\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/Pasajero/CrearPasajero",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Pasajero",
+								"CrearPasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarPasajero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NombreCompleto\": \"Julian Andres Jerez Nieto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/Pasajero/ConsultarPasajero",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Pasajero",
+								"ConsultarPasajero"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Municipio",
+			"item": [
+				{
+					"name": "Obtener Municipios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/Municipio/ObtenerMunicipio",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Municipio",
+								"ObtenerMunicipio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Municipio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"San Gil\",\r\n    \"Departamento\": \"Santander\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/Municipio/CrearMunicipio",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Municipio",
+								"CrearMunicipio"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ruta",
+			"item": [
+				{
+					"name": "ObtenerRutas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/Ruta/ObtenerRutas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"Ruta",
+								"ObtenerRutas"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RutaBus",
+			"item": [
+				{
+					"name": "ObtenerRutaBus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/RutaBus/ObtenerRutaBus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"RutaBus",
+								"ObtenerRutaBus"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

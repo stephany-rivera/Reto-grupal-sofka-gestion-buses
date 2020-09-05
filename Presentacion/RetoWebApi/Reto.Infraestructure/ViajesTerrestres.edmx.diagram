@@ -11,7 +11,7 @@
         <EntityTypeShape EntityType="ViajesTerrestresModel.RutaBus" Width="1.5" PointX="5.5" PointY="1" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Bus" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_Pasajero_RutaBus" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="2.875" PointY="2.875" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="3.25" PointY="1.625" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_Destino" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_Ruta_Municipio" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_Ruta_Municipio1" />
