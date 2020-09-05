@@ -12,12 +12,21 @@ namespace RetoWebApi.Controllers
     public class PasajeroController : ApiController
     {
         [HttpGet]
-        public HttpResponseMessage ObtenerPasajero()
+        public HttpResponseMessage ObtenerPasajeros()
         {
-            var response = PasajeroService.ObtenerPasajero();
+            var response = PasajeroService.ObtenerPasajeros();
             HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
             return result;
         }
+
+        [HttpPost]
+        public HttpResponseMessage ConsultarPasajero([FromBody] PasajeroModel pasajeroModel)
+        {
+            var response = PasajeroService.ConsultarPasajero(pasajeroModel);
+            HttpResponseMessage result = Request.CreateResponse(HttpStatusCode.OK, response);
+            return result;
+        }
+
 
         [HttpPost]
         public HttpResponseMessage CrearPasajero([FromBody] PasajeroModel pasajeroModel)

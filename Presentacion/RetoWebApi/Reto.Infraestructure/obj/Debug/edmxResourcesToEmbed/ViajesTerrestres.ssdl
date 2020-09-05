@@ -32,8 +32,10 @@
     </Key>
     <Property Name="RutaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="OrigenId" Type="int" />
     <Property Name="DestinoId" Type="int" Nullable="false" />
-    <Property Name="Transbordo" Type="bit" />
+    <Property Name="Trasbordo" Type="bit" />
+    <Property Name="TrasbordoMunicipioId" Type="int" />
   </EntityType>
   <EntityType Name="RutaBus">
     <Key>
@@ -64,6 +66,30 @@
       </Principal>
       <Dependent Role="Pasajero">
         <PropertyRef Name="RutaBusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ruta_Municipio">
+    <End Role="Municipio" Type="Self.Municipio" Multiplicity="0..1" />
+    <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Municipio">
+        <PropertyRef Name="MunicipioId" />
+      </Principal>
+      <Dependent Role="Ruta">
+        <PropertyRef Name="TrasbordoMunicipioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ruta_Municipio1">
+    <End Role="Municipio" Type="Self.Municipio" Multiplicity="0..1" />
+    <End Role="Ruta" Type="Self.Ruta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Municipio">
+        <PropertyRef Name="MunicipioId" />
+      </Principal>
+      <Dependent Role="Ruta">
+        <PropertyRef Name="OrigenId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -104,6 +130,14 @@
     <AssociationSet Name="FK_Pasajero_RutaBus" Association="Self.FK_Pasajero_RutaBus">
       <End Role="RutaBus" EntitySet="RutaBus" />
       <End Role="Pasajero" EntitySet="Pasajero" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ruta_Municipio" Association="Self.FK_Ruta_Municipio">
+      <End Role="Municipio" EntitySet="Municipio" />
+      <End Role="Ruta" EntitySet="Ruta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ruta_Municipio1" Association="Self.FK_Ruta_Municipio1">
+      <End Role="Municipio" EntitySet="Municipio" />
+      <End Role="Ruta" EntitySet="Ruta" />
     </AssociationSet>
     <AssociationSet Name="FK_RutaBus_Bus" Association="Self.FK_RutaBus_Bus">
       <End Role="Bus" EntitySet="Bus" />

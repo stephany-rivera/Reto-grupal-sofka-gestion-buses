@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Reto.Infraestructure;
 
 namespace Reto.Services.Models
 {
@@ -12,6 +10,7 @@ namespace Reto.Services.Models
         public int? RutaBusId { get; set; }
         public int? SillaAsignada { get; set; }
         // parametro complementario
-        public string  NombreDestino { get; set; }
-    }
+        public string PasajeroDestino { get; set; }
+        public string PasajeroOrigen { get; set; }
+}
 }

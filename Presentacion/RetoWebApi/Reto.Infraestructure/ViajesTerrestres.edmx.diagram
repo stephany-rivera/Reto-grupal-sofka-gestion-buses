@@ -6,15 +6,17 @@
     <edmx:Diagrams>
       <Diagram DiagramId="45aa30383b044603980dc9d7f9be283f" Name="Diagram1" ZoomLevel="95">
         <EntityTypeShape EntityType="ViajesTerrestresModel.Bus" Width="1.5" PointX="5.5" PointY="3.625" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Municipio" Width="1.5" PointX="1" PointY="1.25" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Municipio" Width="1.5" PointX="0.625" PointY="1" />
         <EntityTypeShape EntityType="ViajesTerrestresModel.Pasajero" Width="1.5" PointX="7.75" PointY="1" />
-        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="3.25" PointY="1" />
         <EntityTypeShape EntityType="ViajesTerrestresModel.RutaBus" Width="1.5" PointX="5.5" PointY="1" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Bus" />
-        <AssociationConnector Association="ViajesTerrestresModel.FK_Destino" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_Pasajero_RutaBus" />
+        <EntityTypeShape EntityType="ViajesTerrestresModel.Ruta" Width="1.5" PointX="2.875" PointY="2.875" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Destino" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Ruta_Municipio" />
+        <AssociationConnector Association="ViajesTerrestresModel.FK_Ruta_Municipio1" />
         <AssociationConnector Association="ViajesTerrestresModel.FK_RutaBus_Ruta" />
-      </Diagram>
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

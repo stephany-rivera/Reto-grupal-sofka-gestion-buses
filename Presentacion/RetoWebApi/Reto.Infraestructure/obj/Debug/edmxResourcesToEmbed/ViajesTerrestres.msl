@@ -30,22 +30,24 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Ruta">
-      <EntityTypeMapping TypeName="ViajesTerrestresModel.Ruta">
-        <MappingFragment StoreEntitySet="Ruta">
-          <ScalarProperty Name="Transbordo" ColumnName="Transbordo" />
-          <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
-          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-          <ScalarProperty Name="RutaId" ColumnName="RutaId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="RutaBus">
       <EntityTypeMapping TypeName="ViajesTerrestresModel.RutaBus">
         <MappingFragment StoreEntitySet="RutaBus">
           <ScalarProperty Name="BusId" ColumnName="BusId" />
           <ScalarProperty Name="RutaId" ColumnName="RutaId" />
           <ScalarProperty Name="RutaBusId" ColumnName="RutaBusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ruta">
+      <EntityTypeMapping TypeName="ViajesTerrestresModel.Ruta">
+        <MappingFragment StoreEntitySet="Ruta">
+          <ScalarProperty Name="TrasbordoMunicipioId" ColumnName="TrasbordoMunicipioId" />
+          <ScalarProperty Name="Trasbordo" ColumnName="Trasbordo" />
+          <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
+          <ScalarProperty Name="OrigenId" ColumnName="OrigenId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="RutaId" ColumnName="RutaId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

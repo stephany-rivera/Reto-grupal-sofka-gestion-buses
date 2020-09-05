@@ -29,7 +29,7 @@ namespace Reto.Infraestructure
         public virtual DbSet<Bus> Bus { get; set; }
         public virtual DbSet<Municipio> Municipio { get; set; }
         public virtual DbSet<Pasajero> Pasajero { get; set; }
-        public virtual DbSet<Ruta> Ruta { get; set; }
         public virtual DbSet<RutaBus> RutaBus { get; set; }
+        public virtual DbSet<Ruta> Ruta { get; set; }
     }
 }
